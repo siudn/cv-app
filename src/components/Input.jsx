@@ -1,4 +1,4 @@
-function Input({ id, placeholder, type, labelText, onChange, onInput, value }) {
+function Input({ id, placeholder, type, labelText, onChange, value }) {
   return (
     <div>
       <label htmlFor={id}>{labelText}</label>
@@ -6,7 +6,6 @@ function Input({ id, placeholder, type, labelText, onChange, onInput, value }) {
         type={type}
         placeholder={placeholder}
         onChange={onChange}
-        onInput={onInput}
         value={value}
       />
     </div>

@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function Header({ name, email, phone, address }) {
   return (
     <header>

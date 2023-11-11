@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import Input from "./Input";
+import { useState } from "react";
+import Input from "../Input";
 
 function HeaderForm({ onUpdate }) {
   const [formData, setFormData] = useState({
