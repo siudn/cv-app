@@ -20,7 +20,7 @@ function EducationForm({ onUpdate }) {
   };
 
   return (
-    <div>
+    <div className="bg-gray-300 flex flex-col gap-1 p-4 rounded-2xl">
       <Input
         id="school"
         type="text"

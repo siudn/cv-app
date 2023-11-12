@@ -1,0 +1,14 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .w-2550 {
+    width: 2550px;
+  }
+  .h-3300 {
+    height: 3300px;
+  }
+}

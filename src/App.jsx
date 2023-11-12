@@ -29,30 +29,34 @@ function App() {
   };
 
   return (
-    <div>
-      <HeaderForm onUpdate={handleUpdate}></HeaderForm>
-      <ExperienceForm onUpdate={handleUpdate}></ExperienceForm>
-      <EducationForm onUpdate={handleUpdate}></EducationForm>
-      <Header
-        name={cvData.name}
-        email={cvData.email}
-        phone={cvData.phone}
-        address={cvData.address}
-      ></Header>
-      <Experience
-        company={cvData.company}
-        position={cvData.position}
-        date={cvData.date}
-        city={cvData.city}
-        desc={cvData.desc}
-      ></Experience>
-      <Education
-        school={cvData.school}
-        majorDegree={cvData.majorDegree}
-        schoolDate={cvData.schoolDate}
-        schoolLocation={cvData.schoolLocation}
-        schoolDesc={cvData.schoolDesc}
-      ></Education>
+    <div className="min-h-screen min-w-full flex">
+      <div className="flex flex-col justify-evenly content-center font-sans">
+        <HeaderForm onUpdate={handleUpdate}></HeaderForm>
+        <ExperienceForm onUpdate={handleUpdate}></ExperienceForm>
+        <EducationForm onUpdate={handleUpdate}></EducationForm>
+      </div>
+      <div className="">
+        <Header
+          name={cvData.name}
+          email={cvData.email}
+          phone={cvData.phone}
+          address={cvData.address}
+        ></Header>
+        <Experience
+          company={cvData.company}
+          position={cvData.position}
+          date={cvData.date}
+          city={cvData.city}
+          desc={cvData.desc}
+        ></Experience>
+        <Education
+          school={cvData.school}
+          majorDegree={cvData.majorDegree}
+          schoolDate={cvData.schoolDate}
+          schoolLocation={cvData.schoolLocation}
+          schoolDesc={cvData.schoolDesc}
+        ></Education>
+      </div>
     </div>
   );
 }
